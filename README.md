@@ -1,7 +1,18 @@
 Customer Shopping Behavior — End-to-End Retail Analytics Project
+
+
+
+
 A complete data analytics pipeline built from scratch: raw Kaggle data → cleaning in Python → business questions in SQL Server → interactive Power BI dashboard → printable PDF report.
 
 Author: @nedaaalgdawy-svg
+
+Dashboard Preview
+1. Customer Overview
+
+2. Revenue & Locations
+
+3. Products & Shipping
 
 Project Pipeline
 Data preparation (Python / pandas) — data_preparation.ipynbEDA, cleaning and feature engineering: renamed columns to snake_case, removed the duplicated promo_code_used column (it was 100% identical to discount_applied), added age_group and purchases_frequency_days, and exported clean_shopping_behavior.csv (3,900 rows × 19 columns).
@@ -28,9 +39,6 @@ business_questions_bilingual (1).sql	SQL queries answering the business question
 CSB_Shopping_Insights_Dashboard.pbix	Power BI dashboard (interactive)
 CSB_Shopping_Insights_Dashboard.pdf	Dashboard PDF report
 Note: the .pbix was built on Power BI Desktop against SQL Server — if you open it locally, re-map the data source or point it to clean_shopping_behavior.csv.
-
-Tools
-Python (pandas) · SQL Server · Power BI Desktop
 
 About the Data
 The dataset is a 3,900-row retail purchases dataset from Kaggle and it is synthetic (created for learning purposes). Every figure shown in the dashboard was verified against the data with pandas checksums.
